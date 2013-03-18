@@ -20,7 +20,7 @@
     <header>
       <div class="inner">
         <h1>CrystallographyQLPlugins</h1>
-        <h2>A set of QuickLook plugins for Apple OSX, that provide rapid previews of files that are commonly found in structural biology</h2>
+        <h2>A set of QuickLook plugins for Apple OSX, proving rapid previews of files that are commonly found in structural biology</h2>
       </div>
     </header>
 
@@ -29,17 +29,39 @@
         <section id="main-content">
           <h3>Introduction</h3>
 
-<p>Structural biology is plagued with an excess of data, such as PDB files and X-ray diffraction images. We have written two independent QuickLook plugins for the OSX operating system, one for viewing Protein Data Bank (PDB) files and the other for X-ray diffraction images.</p>
+<p>Data visualization is a key, daily activity in structural biology, and often requires several software applications that can access different data formats. The most common data encountered in X-ray protein crystallography are arguably raw X-ray diffraction images and atomic coordinates in PDB format. There are several available software packages that open and manipulate both filetypes. However, on many occasions it is desirable to search, identify and visualize in a simple way many files rapidly without executing memory-intensive and often multifunctional software packages.</p>
 
-<p>The PDB plugin can use pymol to quickly render thumbnail images (Figure 1), while the heart of the plugin lies with the integration of Bosco Ho’s HTML 5 PDB viewer, Jolecule (Figure 2). Jolecule provides the user with a lightweight ’3d’ interactive viewer without the need for opening larger applications like PyMOL, Coot, Chimera or whatever chooses your fancy. Furthermore, we attempt to extract important metadata from the PDB file and visibly present for rapid identification of the structure.</p>
+<p>To account for this, we have written two independent QuickLook plugins for the Apple OSX operating system, one for viewing Protein Data Bank (PDB) files and the other for X-ray diffraction images.</p>
 
-<p>The X-ray diffraction image plugin is designed to open .img and .osc file formats, convert the file to a jpeg and cache it for later display. This is done using a custom version of the CCP4 diff2jpeg library that is built into the plugin (Figure 3).</p>
+<br>
+
+<p><b>QuickLookPDB:</b> The PDB plugin can use pymol to quickly render thumbnail images (<i>Figure 1</i>), while the heart of the plugin lies with the integration of Bosco Ho’s HTML 5 PDB viewer, Jolecule (<i>Figure 2</i>). Jolecule provides the user with a lightweight ’3d’ interactive viewer without the need for opening larger applications like PyMOL, Coot, Chimera or whatever chooses your fancy. Furthermore, we attempt to extract important metadata from the PDB file and visibly present for rapid identification of the structure.</p>
+
+<p><b>QuickLookDiffract:</b> The X-ray diffraction image plugin is designed to open .img and .osc file formats, convert the file to a jpeg and cache it for later display. This is done using a custom version of the CCP4 diff2jpeg library that is built into the plugin (Figure 3).</p>
 
 <p>The plugins are currently available together with an installer or separately, but require manual installation. The plugins have been tested on OSX 10.6, 10.7 and 10.8. Unfortunately, jolecule will not function on 10.6 as webkit was not introduced until OSX 10.7</p>
 
         <h3>Screenshots</h3>
+          <img src="images/Figure_1.png"/>
+          <p><b>Figure 1:</b> Available views of a folder containing PDB files. Shown on the right is a Finder window of a folder containing PDB files with the PyMol rendered cartoon thumbnail. On the left is a QuickLook popup of the same PDB file using the Jolecule viewer.</p>
+
+          <img src="images/Figure_2.png"/>
+          <p><b>Figure 2:</b> QuickLook views of PDB files using Jolecule. <b>(A)</b> Default cartoon view of a multi-chain protein complex, showing the two chains as different colours. <b>(B)</b> Zoomed view of a protein active site showing control of the z-slab, labelling of a selected residue and display of neighbouring residues as ball-and-stick representation. <b>(C)</b> Cartoon view of a protein-DNA complex, showing the two protein chains as red-brown and green and the DNA helix as blue and gold. <b>(D)</b> Overlay of C-alpha chains of two similar structures.</p>
+
+          <img src="images/Figure_3.png"/>
+          <p><b>Figure 3:</b> Available views of a folder containing X-ray diffraction images. Shown on the right is a Finder window displaying the thumbnail view of a diffraction image. On the left is the QuickLook view of the same diffraction image</p>
+
+          <img src="images/Figure_4.png"/>
+          <p><b>Figure 4:</b> Cover flow view of a folder containing PDB’s and diffraction images. </p>
+
           
-          
+
+          <h3>Manual installation instructions</h3>
+
+
+          <h3>Troubleshooting</h3>
+
+
           
         </section>
           <aside id="sidebar">
@@ -47,12 +69,8 @@
             <small>Download</small>
             .pkg installer
           </a>
-          <a href="https://github.com/BenPorebski/CrystallographyQLPlugins/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
 
-          <p class="repo-owner"><a href="https://github.com/BenPorebski/CrystallographyQLPlugins"></a>CrystallographyQLPlugins is maintained by <a href="https://github.com/BenPorebski">BenPorebski</a>.</p>
+          <p class="repo-owner"><a href="https://github.com/BenPorebski/CrystallographyQLPlugins"></a>CrystallographyQLPlugins is maintained by <a href="https://github.com/BenPorebski">Ben Porebski</a>.</p>
 
           <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
         </aside>
