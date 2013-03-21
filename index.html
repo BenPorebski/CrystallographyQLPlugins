@@ -37,11 +37,11 @@
 
 <p><b>QuickLookPDB</b> is the QuickLook plugin for displaying PDB files and provides two visualisation options (<i>Figure 1</i>).  
 
- plugin can use pymol to quickly render thumbnail images (<i>Figure 1</i>), while the heart of the plugin lies with the integration of Bosco Ho’s HTML 5 PDB viewer, Jolecule (<i>Figure 2</i>). Jolecule provides the user with a lightweight ’3d’ interactive viewer without the need for opening larger applications like PyMOL, Coot, Chimera or whatever chooses your fancy. Furthermore, we attempt to extract important metadata from the PDB file and visibly present for rapid identification of the structure.</p>
+ plugin can use pymol to quickly render thumbnail images (<i>Figure 1</i>), while the heart of the plugin lies with the integration of a HTML-5 PDB viewer, <a href="https://github.com/boscoh/jolecule">Jolecule</a> (<i>Figure 2</i>). Jolecule provides the user with a lightweight ’3d’ interactive viewer without the need for opening larger applications like PyMOL, Coot, Chimera or whatever chooses your fancy. Furthermore, we attempt to extract important metadata from the PDB file and visibly present for rapid identification of the structure.</p>
 
 <p><b>QuickLookDiffract:</b> The X-ray diffraction image plugin is designed to open .img and .osc file formats, convert the file to a jpeg and cache it for later display. This is done using a custom version of the CCP4 diff2jpeg library that is built into the plugin (Figure 3).</p>
 
-<p>The plugins are currently available together with an installer or separately, but require manual installation. The plugins have been tested on OSX 10.6, 10.7 and 10.8. Unfortunately, jolecule will not function on 10.6 as webkit was not introduced until OSX 10.7</p>
+<p>The plugins are currently available together with an installer or separately, but require manual installation. The plugins have been tested on OSX 10.6, 10.7 and 10.8. However, jolecule will not function on OSX 10.6 as webkit was not introduced until OSX 10.7</p>
 
         <h3>Screenshots</h3>
           <img src="images/Figure_1.png"/>
@@ -60,7 +60,7 @@
 
         <h3>Manual installation instructions</h3>
 
-          <b>1.</b> Copy an paste the osc and ql_jolecule.qlgenerator files to:<br>
+          <b>1.</b> Copy and paste the osc and ql_jolecule.qlgenerator files to:<br>
           <i><b>~/Library/QuickLook/</b></i>    (If the folder does not exist, create it)<br>
           <br>
           <b>2.</b> In order to get the pdb plugin to use pymol, you need an x11 version of pymol, this can be obtained from macports or by renaming pymol to PyMOLX11Hybrid.app<br>
